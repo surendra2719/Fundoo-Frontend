@@ -36,8 +36,6 @@ class loginScreen extends React.Component {
 
         }
     }
-
-
     handleClose = (event, reason) => {
         try {
             if (reason === 'clickaway') {
@@ -51,7 +49,6 @@ class loginScreen extends React.Component {
 
         }
     };
-
     handleChange1 = event => {
         // event.preventDefault();
         try {
@@ -76,7 +73,6 @@ class loginScreen extends React.Component {
         }
         catch (err) {
             console.log(err, "error in handle change1  in login");
-
         }
     };
     handleChange = prop => event => {
@@ -94,7 +90,6 @@ class loginScreen extends React.Component {
         }
         catch (err) {
             console.log(err, "error in handle click password  in login");
-
         }
     };
     handleSubmit = event => {
@@ -125,16 +120,6 @@ class loginScreen extends React.Component {
                             }
 
                         })
-
-
-
-
-                        // console.log("login  responce ", res);
-                        // localStorage.setItem('username', res.data.firstName)
-                        // localStorage.setItem('email', res.data.email)
-                        // localStorage.setItem('userId', res.data._id)
-                        // this.setState({ open: true, errormsg: "cvfsdgds" })
-                        // this.props.props.history.push("/dashboard")
                     })
                     .catch((err) => {
 
