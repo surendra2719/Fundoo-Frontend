@@ -1,0 +1,1166 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/**fundo*****/
+
+#display {
+  margin: 0px;
+  height: auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fffefe;
+}
+
+/* For desktop: */
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+#login {
+  width: 450px;
+  min-height: 0;
+  min-height: 100vh;
+  border: 1px solid #5381dc;
+  box-sizing: inherit;
+}
+
+/* Bordered form */
+
+form {
+  justify-content: center;
+  align-content: center;
+  border: 5;
+  background-color: white;
+}
+
+/*******FUNDO***********/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: - sans-serif;
+}
+
+.margin {
+  margin-top: 5%;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-size: 1320px 900px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bb7b7800;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-weight: lighter;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+label {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #007ae8;
+  font-weight: lighter;
+  align-content: center;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.form-wrapperRecover {
+  width: 363px;
+  height: 277px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+}
+
+.labelOne {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  color: #007ae8;
+  font-weight: lighter;
+  align-content: center;
+}
+
+.root {
+  flex-Grow: 1,
+
+}
+/* 
+.grow {
+  flex-Grow: 1,
+} */
+
+.menuButton {
+  margin-Left: -12;
+  margin-Right: 20
+}
+
+.container {
+  display: 'flex';
+  flex-Wrap: 'wrap';
+  margin-left: 0%
+}
+
+.textField {
+  margin-Left: 30%;
+  margin-Right: 10px;
+  width: 40%;
+  padding: 0px 41%;
+}
+
+#Icon {
+  margin-Left: 41px
+}
+
+#dashbutton {
+  color: #e3e3f3
+}
+
+#container {
+  display: 'flex';
+  flex-wrap: 'wrap';
+  margin-Left: "themespacing.unit";
+  margin-Right: "theme.spacing.unit",
+}
+
+.form-wrapperone {
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #555;
+  background-color: #ffffff;
+}
+
+#buttonsfor {
+  margin-top: 10px
+}
+
+#headerF {
+  text-align: center;
+  width: 100%;
+  color: #0d2fee;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#headerR {
+  text-align: center;
+  width: 100%;
+  color: #f70f0f;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#headerg {
+  text-align: center;
+  width: 100%;
+  color: green;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#headerY {
+  text-align: center;
+  width: 100%;
+  color: #e2d628;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#headerB {
+  text-align: center;
+  width: 100%;
+  color: #1433e4;
+  font-weight: 100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#loginheader {
+  text-align: center;
+  width: 98%;
+  color: #211e1e;
+  font-style: inherit;
+  margin-bottom: auto;
+  margin-bottom: 3px;
+  font-weight: 100;
+  font-family: -apple-system, "BlinkMacSystemFont", Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.BUTTONS {
+  color: #3f51b5;
+  background-color: royalblue;
+  font-size: 0.875rem;
+  text-decoration-color: #fffefe;
+  line-height: 1.75;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+}
+
+.BUTTONS.buttonslabel {
+  width: 30%;
+  align-items: inherit;
+  color: #fffefe;
+  justify-content: inherit;
+  position: relative;
+  bottom: -28px;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  border: 1px solid royalblue;
+}
+
+.CREATEBUTTONS {
+  color: #3f51b5;
+  background-color: white;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-radius: 4px;
+  position: relative;
+  left: -38%;
+  text-align: center;
+  border: 1x white;
+}
+
+.CREATEBUTTONS.buttonslabel {
+  width: 36%;
+  cursor: default;
+  align-items: inherit;
+  color: #4169e1;
+  justify-content: inherit;
+  font-style: normal;
+  position: relative;
+  left: -33%;
+  top: 41px;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  border: 1px solid white;
+}
+
+.SIGNINBUTTONS {
+  color: #3f51b5;
+  background-color: white;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  font-weight: 500;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-radius: 4px;
+  position: relative;
+  left: -35%;
+  text-align: center;
+  border: 1x white;
+}
+
+.SIGNINBUTTONS.buttonslabel {
+  width: 36%;
+  cursor: default;
+  align-items: inherit;
+  color: #4169e1;
+  justify-content: inherit;
+  font-style: normal;
+  position: relative;
+  left: -140px;
+  top: 41px;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  border: 1px solid white;
+}
+
+.background.body {
+  display: block;
+  margin: 0;
+  padding: 0px 0px;
+  position: fixed;
+  left: 32%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#form-wrapper {
+  width: 32%;
+  height: 450px;
+  border: 0.5px solid #c2baba;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  padding: 20px 40px;
+  flex-Wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0px 36px 60px #c6b7b7;
+  ;
+  background-color: #ffffff;
+  height: auto;
+  min-height: 500px;
+  overflow-y: auto;
+  margin-right: auto;
+  /* 1 */
+  margin-left: auto;
+}
+
+#forgetlink {
+  position: relative;
+  left: -36.3%;
+  top: 50px;
+  color: #4169e1;
+  font-size: 13.2px;
+}
+
+.registrationwrapper {
+  width: 46%;
+  height: 76%;
+  border: 0.5px solid #c2baba;
+  display: flex;
+  position: absolute;
+  left: 25%;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 36px 60px #c6b7b7;
+  ;
+  background-color: #ffffff;
+  height: auto;
+  min-height: 500px;
+  overflow-y: auto;
+  margin-right: auto;
+  /* 1 */
+  margin-left: auto;
+  /* 1 */
+  flex-Wrap: wrap;
+}
+
+#NameFields {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.1875em;
+  align-items: center;
+}
+
+#gmailFields {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  padding-right: 6.9%;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.1875em;
+  align-items: center;
+}
+
+.form1 {
+  justify-content: center;
+  align-content: center;
+  border: 5;
+  background-color: white;
+  display: 'flex';
+  flex-Wrap: 'wrap';
+  flex-direction: column;
+  width: auto;
+  position: relative;
+  left: -8%;
+}
+
+.form2 {
+  justify-content: center;
+  align-content: center;
+  border: 5;
+  background-color: white;
+  display: flex;
+  flex-Wrap: wrap;
+  flex-direction: column;
+  width: auto;
+  position: fixed;
+  left: 4%;
+}
+
+#gmail {
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0%;
+  position: relative;
+  min-width: 0;
+  position: relative;
+  top: 59px;
+  flex-direction: column;
+  vertical-align: top;
+  position: absolute;
+  top: 44%;
+}
+
+#password {
+  margin: 0;
+  border: 0;
+  display: inline-flex;
+  padding: 0%;
+  position: relative;
+  min-width: 0;
+  position: relative;
+  top: 59px;
+  flex-direction: column;
+  vertical-align: top;
+  position: absolute;
+  top: 38%;
+}
+
+#passwordFields {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.1875em;
+  align-items: center;
+}
+
+/**********************/
+
+#container1 {
+  display: 'flex';
+  flex-wrap: 'wrap';
+  margin-Left: "themespacing.unit";
+  margin-Right: "theme.spacing.unit";
+  justify-content: space-between
+}
+
+#container2 {
+  display: 'flex';
+  flex-wrap: 'wrap';
+  margin-Left: "themespacing.unit";
+  margin-Right: "theme.spacing.unit";
+  justify-content: space-between;
+}
+
+#container3 {
+  display: 'flex';
+  flex-wrap: 'wrap';
+  margin-Left: "themespacing.unit";
+  margin-Right: "theme.spacing.unit";
+  justify-content: space-between;
+}
+
+.INput {
+  padding: 18.5px 68px;
+}
+
+.textfieldInput {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 69.0%;
+  content: "\00a0";
+  position: absolute;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+#color {
+  color: #111;
+}
+
+.textfieldInput1 {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 38.4%;
+  content: "\00a0";
+  position: absolute;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+/***************************************appbar*****************************/
+
+#root {
+  width: '100%';
+  flex-wrap: wrap
+}
+
+#app {
+  color: "default";
+  position: relative;
+}
+
+#grow {
+  flex-Grow: 1;
+}
+
+#menuButton {
+  margin-Left: -12;
+  margin-Right: 20;
+  color: inherit
+}
+
+#tittle {
+  display: 'none';
+  position: inherit;
+  display: 'block';
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.26rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.46429em;
+}
+
+#search {
+  position: relative;
+  border: "border-Radius";
+  background-Color: palette white, 0.15;
+  margin-Right: auto;
+  margin-Left: 0;
+  width: '100%';
+  margin-Left: 3rem;
+  width: 'auto',
+}
+
+#searchIcon {
+  width: 9%;
+  height: '100%';
+  position: 'absolute';
+  pointer-Events: 'none';
+  display: 'flex';
+  align-Items: 'center';
+  justify-Content: 'center'
+}
+/* 
+.inputRoot:focus {
+  color: inherit;
+  width: '100%';
+} */
+
+#inputRoot {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.1875em;
+  align-items: center;
+  background: transparent;
+  outline: none;
+  padding: 11px 16px 11px 16px;
+  position: absolute;
+  top: 8%;
+  left: 19%;
+}
+
+#in {
+  background: transparent;
+  border: none;
+  font: normal 16px Roboto, sans-serif;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  height: 46px;
+  outline: none;
+  padding: 11px 16px 11px 16px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  left: -18%;
+  margin-top: 32%
+}
+
+#Icon {
+  fill: currentColor;
+  width: 2em;
+  height: 1em;
+  display: inline-block;
+  font-size: 24px;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  position: fixed;
+  user-select: none;
+  flex-shrink: 0;
+  right: 6%;
+  top: 2%;
+}
+
+#drawer {
+  width: 240%;
+  flex-Shrink: 0;
+}
+
+#drawerPaper {
+  position: relative;
+  top: 19px;
+}
+
+#drawerHeader {
+  display: 'flex';
+  align-items: 'center';
+  padding: '0 8px';
+  margin-top: -24px;
+  justify-Content: 'flex-end',
+}
+
+.Drawer {
+  top: 96px;
+  flex: 1 0 auto;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  z-index: 1200;
+  outline: none;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  margin-top: 65px;
+  -webkit-overflow-scrolling: touch;
+}
+
+#lable {
+  font-size: 11px;
+  position: relative;
+  left: -33%;
+}
+
+.MuiDrawer-paper-97 {
+  top: 26%;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  z-index: 1200;
+  outline: none;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  margin-top: 7.4%;
+  -webkit-overflow-scrolling: touch;
+}
+
+#element {
+  z-index: 2;
+  position: absolute;
+  top: 108px;
+  bottom: 0px;
+  transition: -webkit-transform 0.3s ease-out 0s;
+  will-change: transform;
+  overflow-y: auto;
+  background: white;
+  left: 0px;
+  transform: translateX(0%);
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px;
+}
+
+.class {
+  height: 32%;
+}
+
+/* .root {
+  width: '100%';
+} */
+
+#search {
+  position: 'relative';
+  margin-left: 9%;
+}
+
+#searchIcon {
+  width: 67%;
+  height: '100%';
+  margin-left: -58.5%;
+  background-color: #e0e0e0;
+  margin-top: 1.1px;
+  height: px;
+  text-align: right;
+  padding: 6.3px;
+  border-end-end-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 5.41px;
+}
+
+#inputRoot {
+  color: 'inherit';
+  width: 1564%;
+  background-color: #e0e0e0;
+  margin-left: 2%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.MuiDrawer-paper-61 {
+  top: 67px;
+  -webkit-flex: 1 0 fixed;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  z-index: 1200;
+  outline: none;
+  position: fixed;
+  /* overflow-y: auto; */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  /* -webkit-overflow-scrolling: touch; */
+  margin-top: 67px;
+}
+
+#bc {
+  background-color: #5f83b9
+}
+
+.MuiDrawer-paper-61 {
+  top: 68px;
+  flex: 1 0 auto;
+  height: 100%;
+  display: flex;
+  z-index: 1200;
+  outline: none;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 3px;
+}
+
+#gird {
+  margin-left: -463%
+}
+
+#logout {
+  position: relative;
+  left: -3%;
+}
+
+#clr {
+  background-color: #feefc3;
+}
+
+.createNote {
+  height: 30px;
+  width: 500px;
+  margin-left: 100px;
+  margin-top: 100px;
+  text-align: left;
+  padding: 11px;
+  border: 1px solid #dadce0;
+}
+
+.staticCreateNote {
+  display: flex;
+  flex-direction: row
+}
+
+.createNoteParent {
+  margin-left: 245px;
+  margin-top: -4%;
+}
+
+.NoteParent {
+  margin-left: 400px;
+  margin-top: -10%;
+}
+
+#createNote1 {
+  margin-left: 100px;
+  margin-top: 122px;
+  width: 522px;
+  border: 1px solid #dadce0;
+  /* justify-content: space-between */
+}
+
+#titleInput {
+  margin-left: -134%;
+  width: 222%;
+  overflow: hidden;
+}
+
+#noteInputBase {
+  margin-top: 0px;
+  width: 460px;
+  height: 32%;
+  overflow: hidden;
+}
+
+#closebutton {
+  margin: 0;
+  margin-left: 396px;
+}
+
+.listRemindr {
+  padding-left: 4px;
+  /* margin-top: 5%; */
+  height: 32%
+}
+
+#currentDate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardToolsClose {
+  display: flex;
+  justify-content: space-between;
+}
+
+#createNotePinIcon {
+  display: flex;
+  flex-direction: row;
+  margin-left: 56%
+}
+
+.cards {
+  width: 240px;
+  margin-top: 20px;
+  padding-top: 15px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cardTools {
+  visibility: visible;
+  box-shadow: 2px 2px 2px 2px solid gray
+}
+
+.listRemindr {
+  padding-left: 15px
+}
+
+#papperlogout {
+  height: 12%;
+  margin-top: 18px;
+  margin-left: 9px;
+}
+
+#popperid {
+  height: 12px;
+}
+
+#userProfileDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+#papperlogout {
+  width: 105%;
+}
+
+#signoutComponentbutton {
+  display: flex;
+  justify-content: space-between
+}
+
+#notediv {
+  margin-top: -2%;
+  margin-left: 4%;
+  position: absolute;
+}
+
+#cardToolsClose {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cardTools {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  /* visibility: hidden; */
+}
+
+#colorPalleteCard {
+  position: absolute;
+  max-width: 116px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 2;
+  transition: 5s;
+}
+
+#appbarinfunddo {
+  position: fixed;
+  display: -webkit-flex;
+  display: flex;
+  box-shadow: none;
+  border: 1px solid #e8e3e3;
+}
+
+#moreOptionsMenu {
+  font-family: arial;
+  font-size: 15px;
+  height: 8px;
+}
+
+.moreOptionsPopper {
+  margin-top: -95px;
+  z-index: -1
+}
+
+#image {
+  margin-top: -9px;
+}
+
+#fbutton {
+  text-transform: none;
+  margin-top: 12%;
+  color: royalblue
+}
+
+#CreateNote2 {
+  height: 100px;
+  width: 497px;
+  margin-left: 398px;
+  margin-top: 27px;
+  text-align: left;
+  padding: 11px;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.)
+}
+
+#displaycontentdiv {
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: column; 
+}
+
+#displaycontentdiv1 {
+  
+  flex-direction: column;
+  justify-content: space-between;
+ /* height: 100%; 
+ width: 269px; */
+}
+
+#fontstyle {
+  font-size: large;
+  font-weight: 800;
+}
+
+.listCards {
+  width: 490px;
+  /* margin-left: 370px; */
+  margin-top: 25px;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  justify-content: space-between
+  }
+  
+
+    .Cards {
+    width: 240px;
+    margin-top: 25px;
+    /* margin-left: 5px; */
+    /* padding-top: 15px; */
+    text-align: left;
+    padding: 7px;
+    border-radius: 10px;
+    /* justify-content: space-between */
+    height: min-content
+    }
+    
+    .CardsView {
+      display: flex; 
+       flex-flow: wrap;
+       float: left;
+        margin-left: 25%;
+       padding: 20px;
+       justify-content: space-between;
+     
+    
+    }
+    #chipcss{
+      display: inline-flex;
+      font-size: 0.8125rem;
+      align-items: center;
+      border-radius: 75px;
+      width: 178px;
+      background-color: #e0e0e0;
+      
+      }
+      #createNotePinIcon1 {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0%;
+        justify-content: inherit
+      }
+      #dialogbox {
+        padding: 11px;
+        border: 1px solid #dadce0;
+        border-radius: 10px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.20);
+        }
+        
+        #dailogmain {
+        background: transparent;
+        }
+        #TakeNotealign {
+          margin-top: 2%;
+          }
+          #noteInputBase1 {
+            margin-top: 0px;
+            width: 460px;
+            }
+            .pindisplay{
+         
+              margin-top: -4px;
+              position: absolute;
+              margin-left: 223px;
+            }
+
+#dialogbox {
+  padding: 11px;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.20);
+  width: 482px;
+  }
+  
+  #dailogmain {
+  background: transparent;
+  }
+
+  
