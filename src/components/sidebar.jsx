@@ -99,7 +99,9 @@ componentDidMount() {
           alert(error)
       });
 }
-displaySearchLabels(value){
+displaySearchLabels=(value)=>{
+  console.log("value",value);
+  
   this.props.searchLabels(value)
 }
 showLabels(value) {
@@ -163,6 +165,7 @@ newLabels(value){
       navigateArchived: true,
       navigateTrashed: false
     })
+    this.props.makelabelfalse();
     this.props.handleNavigation(this.state.navigateReminder, this.state.navigateArchived, this.state.navigateTrashed);
   }
   async handleNotes() {
@@ -171,7 +174,7 @@ newLabels(value){
         navigateArchived: false,
         navigateTrashed: false,
     })
-  
+    this.props.makelabelfalse();
     this.props.handleNavigation(this.state.navigateReminder, this.state.navigateArchived, this.state.navigateTrashed);
 }
 async handleTrashed() {
@@ -181,7 +184,7 @@ async handleTrashed() {
       navigateArchived: false,
       navigateTrashed: true
   })
- 
+  this.props.makelabelfalse();
   this.props.handleNavigation(this.state.navigateReminder, this.state.navigateArchived, this.state.navigateTrashed);
 }
 async handleReminder() {
@@ -190,7 +193,7 @@ async handleReminder() {
       navigateArchived: false,
       navigateTrashed: false
   })
- 
+  this.props.makelabelfalse();
   this.props.handleNavigation(this.state.navigateReminder, this.state.navigateArchived, this.state.navigateTrashed);
 }
   render() {

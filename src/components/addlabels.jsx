@@ -29,13 +29,15 @@ class AddLabelsOnNote extends Component {
                 this.setState({
                     label: result
                 })
+                
             })
+
             .catch((error) => {
                 alert(error)
             });
     }
-
     showLabels(value) {
+      console.log("value",value);
         this.setState({
             label: [...this.state.label, value]
         })
@@ -47,9 +49,9 @@ class AddLabelsOnNote extends Component {
         })
     }
     selectLabel(noteID, label) {
-        this.setState({
-            open: false
-        })
+        // this.setState({
+        //     open: false
+        // })
         this.props.addLabelToNote(noteID, label)
     }
 

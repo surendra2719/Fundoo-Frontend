@@ -40,8 +40,8 @@ class Tools extends Component {
                         note={this.props.note}
                         noteID={this.props.noteID}
                         date={this.props.date}
-notetitle={this.props.notetitle}
-notedescription={this.props.notedescription}
+                        notetitle={this.props.notetitle}
+                        notedescription={this.props.notedescription}
                     />
                     < Color
                         handleToggle={this.handleToggle}
@@ -61,7 +61,7 @@ notedescription={this.props.notedescription}
                         noteID={this.props.noteID}
                     />
                     <Moreoptions
-                       addLabelToNote={this.addLabelToNote}
+                        addLabelToNote={this.props.addLabelToNote}
                         trashNote={this.props.trashNote}
                         noteID={this.props.noteID}
                     />

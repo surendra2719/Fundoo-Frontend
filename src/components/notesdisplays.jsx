@@ -29,6 +29,7 @@ export default class Cards extends Component {
             image: "",
             label: false,
 
+
         }
         this.cardsToDialogBox = React.createRef();
         this.handleClick = this.handleClick.bind(this);
@@ -47,7 +48,9 @@ export default class Cards extends Component {
     //     console.log(JSON.stringify(this.del));
     // }
 
-
+    displayLabelledCards() {
+        this.setState({ label: true })
+    }
     handleClick = (note) => {
         this.setState({ open1: true })
         console.log("dilog note in notedisplay==>", note);
@@ -57,6 +60,11 @@ export default class Cards extends Component {
         this.setState({ open1: false })
 
     }
+    makelabelfalse = () => {
+        this.setState({ label: false })
+
+    }
+
     archiveNote = (value, noteId) => {
         const isArchived = {
             noteID: noteId,
@@ -92,6 +100,8 @@ export default class Cards extends Component {
     componentDidMount = () => {
         getNotes()
             .then((result) => {
+                console.log("result",result);
+                
                 this.setState({
                     notes: result.data.result
                 })
@@ -102,6 +112,7 @@ export default class Cards extends Component {
 
             })
             .catch((error) => {
+            
                 alert(error)
             });
     }
@@ -304,19 +315,23 @@ export default class Cards extends Component {
             noteID: noteID,
             label: value
         }
+        console.log("addlabel to note----->", addLabel);
+
         saveLabel('/saveLabelToNote', addLabel)
             .then((result) => {
-
+                console.log("addlabel to note----->", result.data.data);
 
                 let newArray = this.state.notes
                 for (let i = 0; i < newArray.length; i++) {
                     if (newArray[i]._id === noteID) {
-                        newArray[i].label = result.data.result;
+                        newArray[i].label = result.data.data;
                         this.setState({
                             notes: newArray
                         })
                     }
                 }
+                console.log("notes", this.state.notes);
+
             })
             .catch((error) => {
                 alert(error)
@@ -333,7 +348,7 @@ export default class Cards extends Component {
                 let newArray = this.state.notes
                 for (let i = 0; i < newArray.length; i++) {
                     if (newArray[i]._id === noteId) {
-                        newArray[i].label = result.data.result;
+                        newArray[i].label = result.data.data;
                         this.setState({
                             notes: newArray
                         })
@@ -350,6 +365,8 @@ export default class Cards extends Component {
         this.setState({ label: true })
     }
     render() {
+
+
         //         const notes={...notes}
         //         const SortableItem = SortableElement(({value}) => <li> {value}</li> );
 
@@ -368,6 +385,7 @@ export default class Cards extends Component {
         // });
 
         let noteArray = otherArray(this.state.notes);
+        console.log("NOTE DISPLAUY-->", noteArray);
         // const items = this.state.notes;
         if ((this.props.searchNote !== "" || this.state.label) && (!this.props.navigateArchived
             && !this.props.navigateReminder && !this.props.navigateTrashed)) {
@@ -419,7 +437,6 @@ export default class Cards extends Component {
         else if (this.props.navigateTrashed) {
             return (
                 <TrashNavigator
-                    addLabelToNote={this.addLabelToNote}
                     deleteLabelFromNote={this.deleteLabelFromNote}
                     trashArray={trashArray(this.state.notes)}
                     othersArray={otherArray(this.state.notes)}
@@ -451,7 +468,10 @@ export default class Cards extends Component {
         }
         else {
             let cardsView = this.props.noteProps ? "listCards" : "Cards";
+
             return (
+
+
                 <div>
                     {pinArray(this.state.notes).length !== 0 ?
                         <PinAndOthers
@@ -476,6 +496,7 @@ export default class Cards extends Component {
                             {
                                 Object.keys(noteArray).slice(0).reverse().map((key) => {
 
+                                    console.log("NOTE DISPLAUY-->", noteArray[0].label.length);
                                     return (
 
                                         // <SortableList onSortEnd={this.onSortEnd} >
@@ -514,7 +535,7 @@ export default class Cards extends Component {
                                                     />
                                                     :
                                                     null}
-                                                 {noteArray[key].label.length > 0 ?
+                                                {noteArray[key].label.length > 0 ?
                                                     noteArray[key].label.map((key1, index) =>
                                                         <div key={index} >
                                                             <Chip
@@ -525,7 +546,7 @@ export default class Cards extends Component {
 
                                                     )
                                                     :
-                                                    null} 
+                                                    null}
                                                 <div id="">
 
                                                     <Tools

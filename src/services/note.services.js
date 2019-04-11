@@ -136,7 +136,7 @@ export function saveLabel(url,data) {
 }   
  export function deleteLabel(data) {
     
-    return axios('/deleteLabel', {
+    return axios('/deleteLabels', {
         method: "POST",
         headers: {
             "access-token": localStorage.getItem("token")
@@ -145,8 +145,7 @@ export function saveLabel(url,data) {
     })
 } 
 export function updateLabel(data) {
-    
-    return axios('/updateLabel', {
+    return axios('/updateLabels', {
         method: "PUT",
         headers: {
             "access-token": localStorage.getItem("token")

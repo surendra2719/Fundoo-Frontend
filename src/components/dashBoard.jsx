@@ -89,6 +89,18 @@ class dashBoardscreen extends React.Component {
 
 
   }
+  makelabelfalse=()=>{
+    this.noteToCards.current.makelabelfalse();
+  }
+
+
+  searchLabels=(value)=> {
+    this.setState({ label: value });
+    console.log("searchlabels", value);
+    this.noteToCards.current.displayLabelledCards();
+}
+
+
   handleSearchBar=(evt)=> {
     this.setState({ searchNote: evt.target.value });
     this.getSearchedNotes(evt.target.value)
@@ -181,9 +193,9 @@ class dashBoardscreen extends React.Component {
   //   this.handleCardStyle();
   // }
 
-  searchLabels=(value)=> {
-    // this.searchLabels(value)
-}
+//   searchLabels=(value)=> {
+//     // this.searchLabels(value)
+// }
   render() {
     const { open } = this.state;
     const { classes } = this.props;
@@ -224,9 +236,11 @@ class dashBoardscreen extends React.Component {
           </Toolbar>
         </AppBar>
 
-        <div>    <Sidebar menuact={this.state.open}
+        <div>    <Sidebar 
+        makelabelfalse={this.makelabelfalse}
+        menuact={this.state.open}
           handleNavigation={this.handleNavigation}
-          searchLabels={(value) => this.searchLabels(value)}
+          searchLabels={this.searchLabels}
           makeLabelFalse={this.props.makeLabelFalse}
    /> </div>
         <div className={classes.drawerHeader} >

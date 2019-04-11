@@ -48,7 +48,8 @@ class EditLabel extends Component {
             label: value
         }
         if (label.label !== "") {
-
+            console.log("label in edit label-->",label);
+            
             addLabel('/addLabel', label)
                 .then(async (result) => {
                     console.log("label result", result);
@@ -72,10 +73,10 @@ class EditLabel extends Component {
         const labelId = {
             labelID: value
         }
+        console.log("label result", labelId);
         deleteLabel(labelId)
             .then(async (result) => {
                 if (result.data.status) {
-
                     console.log("label result", result);
                     let newArray = this.props.label
                     for (let i = 0; i < newArray.length; i++) {
@@ -133,8 +134,10 @@ class EditLabel extends Component {
     handlEditLabel(evt) {
         this.setState({ editLabel: evt.target.value });
     }
-    changeLables(id) {
+    changeLables=(id)=> {
         this.setState({ labelID: id })
+        console.log("cscxzscsaddasasa");
+        
     }
 
     handleLabel(evt) {
