@@ -49,9 +49,9 @@ class AddLabelsOnNote extends Component {
         })
     }
     selectLabel(noteID, label) {
-        // this.setState({
-        //     open: false
-        // })
+        this.setState({
+            open: false
+        })
         this.props.addLabelToNote(noteID, label)
     }
 

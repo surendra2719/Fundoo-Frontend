@@ -490,7 +490,7 @@ export default class Cards extends Component {
                         // uploadImage={this.uploadImage}
                         />
                         :
-
+                <div style={{display:"flex" }}>
                         <div className="CardsView">
 
                             {
@@ -593,6 +593,7 @@ export default class Cards extends Component {
                                 onChange={this.handleRLDDChange}
                             /> */}
 
+                        </div>
                         </div>
                     }
                     <DialogBox
