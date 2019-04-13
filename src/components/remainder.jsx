@@ -233,7 +233,7 @@ export default class reminder extends React.Component {
   }
   handleChange = name => event => {
     this.setState({ [name]: event.target.value });
-    //console.log("datedatedatedate", this.state.date);
+
   };
 
   handleClose1 = () => {
