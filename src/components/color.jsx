@@ -26,15 +26,7 @@ const colorCodesAndNames = [{ name: "white", colorCode: "rgb(255, 255, 255)" },
 { name: "darkBlue", colorCode: "rgb(174, 203, 250)" },
 { name: "gray", colorCode: "rgb(232, 234, 237)" }]
 
-// const theme = createMuiTheme({
-//   overrides: {
-//     MuiCard:{
-//       root:{
-//         zIndex:9999
-//       }
-//     }
-//   }
-// })
+
   
 class ColorComponent extends React.Component {
   constructor(props) {
