@@ -15,30 +15,7 @@ import IconButton from '@material-ui/core/IconButton';
 
 import Snackbar from '@material-ui/core/Snackbar';
 
-// const theme = createMuiTheme({
-//   // typography: {
-//   //   useNextVariants: true,
-//   // },
-//   overrides: {
-//     MuiMenuItem: {
-//       root: {
-//         borderbottomrightradius: 0,
-//         bordertoprightradius: 0,
-//         height: "13px",
-//         marginTop: "8px",
-//         marginBottom: "8px",
-//         width: "268px",
-//         fontSize: "12px",
-//       }
-//     },
-//     MuiPaper: {
-//       root: {
-//         zIndex: "1"
-//       }
-//     },
-//   },
 
-// });
 
 // class Remainder extends React.Component {
 //   state = {
@@ -265,7 +242,7 @@ export default class reminder extends React.Component {
   };
 
   render() {
-    const setAMPM = this.props.parentToolsProps;
+    // const setAMPM = this.props.parentToolsProps;
     const { anchorEl, open, placement } = this.state;
     return (
       <MuiThemeProvider theme={theme}>

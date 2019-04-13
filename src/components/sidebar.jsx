@@ -13,13 +13,10 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import DeleteOutlinedIcon from '@material-ui/icons/DeleteOutlined';
+
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core';
 import notes from '../assets/notes.svg'
-import Label from '../assets/labelIcon.svg'
+
 import remainder from "../assets/remainder.svg"
 import archives from '../assets/archives.svg'
 import bin from '../assets/bin.svg'

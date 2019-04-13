@@ -241,7 +241,7 @@ class dashBoardscreen extends React.Component {
         menuact={this.state.open}
           handleNavigation={this.handleNavigation}
           searchLabels={this.searchLabels}
-          makeLabelFalse={this.props.makeLabelFalse}
+          // makeLabelFalse={this.props.makeLabelFalse}
    /> </div>
         <div className={classes.drawerHeader} >
           <main

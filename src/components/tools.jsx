@@ -5,7 +5,6 @@ import Color from './color'
 import Archieves from './archives'
 import Moreoptions from './moreOptions'
 import Image from '../components/image'
-import AddLabels from "./addlabels"
 class Tools extends Component {
     constructor(props) {
         super(props);
