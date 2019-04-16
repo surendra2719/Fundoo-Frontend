@@ -81,7 +81,7 @@ try{
                 this.setState({ open: true, errormsg: " PLEASE CHECK YOUR MAIL " })
              })
              .catch((err)=>{
-                this.setState({ open: true, errormsg: " user not found " })
+                this.setState({ open: true, errormsg: " USER NOT FOUND" })
              
              
              })

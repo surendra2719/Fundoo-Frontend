@@ -123,7 +123,7 @@ class loginScreen extends React.Component {
                     })
                     .catch((err) => {
 
-                        this.setState({ open: true, errormsg: "login unsucessesful  in login" })
+                        this.setState({ open: true, errormsg: "LOGIN UNSUCESSFUL" })
 
                         console.log(err);
 
@@ -239,7 +239,7 @@ class loginScreen extends React.Component {
                                 <Button onClick={this.handleSubmit} class="BUTTONS buttonslabel" type="submit" onKeyPress={this.handleKeyPress} >
                                     Signin</Button>              <Snackbar
                                     anchorOrigin={{
-                                        vertical: 'bottom',
+                                        vertical: 'top',
                                         horizontal: 'left',
                                     }}
                                     open={this.state.open}
