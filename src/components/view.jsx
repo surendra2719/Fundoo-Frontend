@@ -32,7 +32,7 @@ class CardsView extends Component {
         return (
             this.state.view ?
                 <div>
-                    <IconButton id="gird">
+                    <IconButton>
                         <Tooltip title="List View" onClick={this.handleCardsView}>
                             <img src={require('../assets/gird.svg')} alt="grid icon" />
                         </Tooltip>
@@ -40,7 +40,7 @@ class CardsView extends Component {
                 </div>
                 :
             <div>
-                    <IconButton id="gird">
+                    <IconButton >
                         <Tooltip title="Grid View" onClick={this.handleCardsView}>
                             <img src={require('../assets/list.svg')} alt="grid icon" />
                         </Tooltip>

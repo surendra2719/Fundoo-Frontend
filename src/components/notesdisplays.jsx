@@ -494,7 +494,7 @@ export default class Cards extends Component {
                         <div className="CardsView">
 
                             {
-                                Object.keys(noteArray).slice(0).reverse().map((key) => {
+                                Object.keys(noteArray).map((key) => {
 
                                     console.log("NOTE DISPLAUY-->", noteArray[0].label.length);
                                     return (
