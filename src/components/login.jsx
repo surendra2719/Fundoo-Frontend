@@ -139,7 +139,7 @@ class loginScreen extends React.Component {
         }
     };
     Onclick = e => {
-        e.preventDefault();
+        // e.preventDefault();
         try {
             this.props.props.history.push("/forgetpassword")
         }
@@ -150,7 +150,7 @@ class loginScreen extends React.Component {
 
     };
     registrationclick = e => {
-        e.preventDefault();
+        // e.preventDefault();
         try {
             this.props.props.history.push("/register")
         }
@@ -181,9 +181,9 @@ class loginScreen extends React.Component {
 
                     </div>
                     <div  >
-                        <form id="container " noValidate autoComplete="off">
+                        <form id="container" noValidate autoComplete="off">
 
-                            <TextField
+                            <TextField  style={{width:"324px"}}
                                 className="textfieldInput"
                                 id="username"
                                 label="User name"
@@ -205,8 +205,8 @@ class loginScreen extends React.Component {
 
                     </div>
                     <div>
-                        <form id="container" noValidate autoComplete="off">
-                            <TextField
+                        <form id="container" noValidate autoComplete="off" >
+                            <TextField style={{width:"324px"}}
                                 id="TextFields"
                                 label="Password"
                                 margin="normal"

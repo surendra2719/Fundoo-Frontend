@@ -221,7 +221,7 @@ class dashBoardscreen extends React.Component {
               <InputBase
                 id="inputRoot"
                 placeholder="Search"
-                // value={this.state.searchNote}
+     
                 onChange={this.handleSearchBar}
                   getSearchedNotes={this.getSearchedNotes} 
               />

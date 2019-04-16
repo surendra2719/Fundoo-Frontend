@@ -35,8 +35,6 @@ export default class Cards extends Component {
         this.handleClick = this.handleClick.bind(this);
         // this.addLabelToNote = this.addLabelToNote.bind(this);
         // this.deleteLabelFromNote = this.deleteLabelFromNote.bind(this);
-
-
     }
     // onSortEnd = ({oldIndex, newIndex}) => {
     //     this.setState({
@@ -108,8 +106,7 @@ export default class Cards extends Component {
                 // console.log("get notes", result.data.result[0].title);
                 // console.log("this.state .notes", this.state.notes[0].title);
                 console.log("get notes", result.data.result);
-                this.del = JSON.stringify(result.data.result)
-
+              
             })
             .catch((error) => {
             
@@ -181,7 +178,10 @@ export default class Cards extends Component {
                         newArray[i].archive = false
                         this.setState({
                             notes: newArray,
+                            
                         })
+                        console.log("newarray",newArray);
+                        
                     }
                 }
 

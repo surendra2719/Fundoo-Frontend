@@ -116,9 +116,10 @@ class CreateNotescard extends React.Component {
             }
 
             createNote(note)
-                .then((result) => {
+                .then((result) => 
+                {
 
-                    console.log("result in the result==>", result.data.result);
+                    console.log("result in the result==>", result);
 
                     this.setState({
                         newNote: result.data.result

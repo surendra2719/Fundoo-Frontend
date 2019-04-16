@@ -275,12 +275,7 @@ export default class reminder extends React.Component {
                           }}
                         />
                       </MenuItem>
-
-
-
-
                       <MenuItem className="currentDate" onClick={() => this.setTodayReminder()}>
-
                       </MenuItem>
                       <MenuItem className="currentDate" onClick={() => this.setTomorrowReminder()}>
                         <div>Tomorrow</div>
@@ -297,7 +292,7 @@ export default class reminder extends React.Component {
                       <div id="savereminder">
                         <Button onClick={this.handlesubmit} >
                           Save
-</Button>
+                       </Button>
                       </div>
                     </div>
                   </ClickAwayListener>
