@@ -42,21 +42,7 @@ class registerScreen extends React.Component {
             }
         }
     }
-    handleClose = (event, reason) => {
-        try{
-        if (reason === 'clickaway') {
-          return;
-        }
-    
-        this.setState({ open: false });
-    }
-    catch(err)
-    {
-        console.log(err,"error in handle close in registration");
-        
-    }
-      };
-    
+
     handleClick = state => () => {
         try{
         this.setState({ open: true, ...state });

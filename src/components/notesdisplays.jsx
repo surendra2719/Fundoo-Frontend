@@ -361,9 +361,7 @@ export default class Cards extends Component {
     makeLabelFalse = () => {
         this.setState({ label: false })
     }
-    displayLabelledCards = () => {
-        this.setState({ label: true })
-    }
+ 
     render() {
 
 
@@ -494,7 +492,7 @@ export default class Cards extends Component {
                         <div className="CardsView">
 
                             {
-                                Object.keys(noteArray).map((key) => {
+                                Object.keys(noteArray).slice(0).reverse().map((key) => {
 
                                     console.log("NOTE DISPLAUY-->", noteArray[0].label.length);
                                     return (
